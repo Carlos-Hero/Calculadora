@@ -13,7 +13,7 @@
 
     <section>
         <div class="calculadora">
-            <form name="calcform" method="post" action="">
+            <form name="calcform" method="post">
                 <fieldset>
                    <legend> Monte sua operação </legend>
              
@@ -24,14 +24,13 @@
              
                    <label for="operacao">Qual operação a ser executada?</label>
                    <select name="operacao" id="operacao">
-                      <option value="somar">Somar</option>
+                      <option value="somar" id="somar">Somar</option>
                       <option value="subtrair">Subtrair</option>
                       <option value="multiplicar">Multiplifcar</option>
                       <option value="dividir">Dividir</option>
                    </select>
              
-                   
-             
+     
                    <input type="button" value="Calcular" class="botao" onclick="calcular()"/>
                 </fieldset>
              </form>
