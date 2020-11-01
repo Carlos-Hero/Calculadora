@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Resília </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Resília</h1>
+    </header>
+
+    <section>
+        <div class="calculadora">
+            <form name="calcform" method="post" action="">
+                <fieldset>
+                   <legend> Monte sua operação </legend>
+             
+                    <label for="numero1">Número 1</label>
+                    <input type="text" name="numero1" id="numero1" />
+                    <label for="valor2">Número 2</label>
+                    <input type="text" name="numero2" id="numero2" />
+             
+                   <label for="operacao">Qual operação a ser executada?</label>
+                   <select name="operacao" id="operacao">
+                      <option value="somar">Somar</option>
+                      <option value="subtrair">Subtrair</option>
+                      <option value="multiplicar">Multiplifcar</option>
+                      <option value="dividir">Dividir</option>
+                   </select>
+             
+                   
+             
+                   <input type="button" value="Calcular" class="botao" onClick="calcular()"/>
+                </fieldset>
+             </form>
+
+        </div>
+        <label for="resultado">O resultado da operacao é:</label>
+        <input type="text" name="resultado" id="resultado" />
+        <div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Resilia 2020</p>
+    </footer>
+
+    <script src="script.js"> </script>
+
+</head>    
+</body>
+</html>
