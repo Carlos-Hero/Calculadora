@@ -18,9 +18,9 @@
                    <legend> Monte sua operação </legend>
              
                     <label for="numero1">Número 1</label>
-                    <input type="text" name="numero1" id="numero1" />
-                    <label for="valor2">Número 2</label>
-                    <input type="text" name="numero2" id="numero2" />
+                    <input onfocus="foco" type="number" name="numero1" id="numero1"/>
+                    <label for="numero2">Número 2</label>
+                    <input type="number" name="numero2" id="numero2" />
              
                    <label for="operacao">Qual operação a ser executada?</label>
                    <select name="operacao" id="operacao">
@@ -32,15 +32,14 @@
              
                    
              
-                   <input type="button" value="Calcular" class="botao" onClick="calcular()"/>
+                   <input type="button" value="Calcular" class="botao" onclick="calcular()"/>
                 </fieldset>
              </form>
 
         </div>
-        <label for="resultado">O resultado da operacao é:</label>
-        <input type="text" name="resultado" id="resultado" />
+    
         <div>
-
+            <p class="texto"></p>
         </div>
 
     </section>
