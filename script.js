@@ -4,7 +4,7 @@ function calcular () {
     var valor2 = parseFloat(document.getElementById('numero2').value) // tem que guardar o valor do 2º input
     var operacao = document.getElementById('operacao').value; //monta a operação
     var resultado = document.querySelector('.texto') // tem que mostrar o resultado da operação
-    var num1 = document.querySelector('#numero1');
+    var num1 = document.querySelector('#numero1'); // Busca a tag com o id
     num1.focus();
 
     switch (operacao)  {
@@ -23,8 +23,6 @@ function calcular () {
     default:
         break
     }
- 
 } 
-
 
 
